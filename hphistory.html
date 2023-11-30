@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>History</title>
+<style>
+body{
+    background-color: darkblue;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20px;
+    transition:2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+
+}
+/css for manual slide navigation/
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px; 
+}
+.manual-btn:hover{
+    background:#40d3dc ;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+</style>
+    </head>
+<body>
+        <!--imageslider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio button start-->
+                <input type="radio" name="radio btn" id="radio1">
+                <input type="radio" name="radio btn" id="radio2">
+                <input type="radio" name="radio btn" id="radio3">
+                <input type="radio" name="radio btn" id="radio4">
+                <!--radio button end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="https://hpgeneralstudies.com/wp-content/uploads/2016/11/Rampur-Bushahr-Freedom-Movement-Himachal-Pradesh-General-Studies.jpg"height="500px"; width:"500px">
+                </div>
+ <div class="slide1">
+ <img src="https://hpgeneralstudies.com/wp-content/uploads/2016/11/Rampur-Bushahr-Freedom-Movement-Himachal-Pradesh-General-Studies.jpg"height="500px"; width:"500px">
+                </div>
+                <div class="slide2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbzya8mnrdXRwHsAXpxshgnbPpGwPen5kcA&usqp=CAU" height="500px"; width:"500px">
+                </div>
+                <div class="slide3">
+                    <img src="https://1.bp.blogspot.com/-UDb5e0luxXY/YbWfBAy5ibI/AAAAAAABD5M/A9gjO0Kl2LofkmB27ZTiIeIrFNzfz1SmQCNcBGAsYHQ/s720/Kangra%2BFort%2Bin%2BHimachal%2BPradesh%2B-%2BA%2Bfort%2Bbuilt%2Bon%2Bthe%2Bhill%2Btop%2Band%2Bsurrounded%2Bby%2Bdeep%2Briver%2Bon%2Bone%2Bside%2Band%2Bsnow%2Bcapped%2Bdhauladhar%2Bmountains%2Bon%2Bother%2Bside-4.jpg" height="500px"; width:"500px">
+                </div>
+                <div class="slide4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLV8Tf7hDGnDly_NJuV-Ck2XkrTpFUvERGdw&usqp=CAU"height="500px"; width:"500px">
+                </div>
+<div class="slide4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLnHVO9QcKmCdnNFxpTNTs-E2uKIJTGprBg&usqp=CAU"height="500px"; width:"500px">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto btn1"></div>
+                    <div class="auto btn2"></div>
+                    <div class="auto btn3"></div>
+                    <div class="auto btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation starts-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation ends-->
+        </div>
+        <!--image slider ends-->
+    </body>
+</html>
