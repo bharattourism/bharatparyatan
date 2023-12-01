@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hidden Gems: The Paryatan</title>
+        <link rel="stylesheet" href="style1.css">
+<style>   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    background: url(https://cdn2.wanderlust.co.uk/media/1073/shutterstock_4372183.jpg?anchor=center&mode=crop&width=1920&height=858&format=auto&rnd=131455359250000000)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30 px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:1px;
+}
+header .navigation a{
+    color: black;
+    background: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header .navigation a:hover{
+    background: blue;
+}
+.content{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+.content .info h2{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.content .info h2 span{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .info p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: white;
+}
+.content .info-btn{
+    color: black;
+    background: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.content .info-btn:hover{
+    background-color: aqua; 
+}
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+label{
+    display: none;
+}
+#check{
+    z-index:3;
+    display: none;
+}
+/*Responsive styles*/
+@media (max-width: 960px){
+    header .navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition-property: color;    
+    }
+    label:hover{
+        color: black;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgba(114, 223, 255, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+   #check:checked ~ header label .menu-btn{
+    display: none;
+   } 
+   #check:checked ~ header label .close-btn{
+    z-index: 2;
+    display: block;
+    position: fixed;
+   }
+}
+
+</style>
+ </head>
+    <body>
+        <section>
+           
+      
+        <div class="content">
+            <div class="info">
+                <h2>Like Tourism<br><span>Be adventourous</span></h2>
+                <p>Considered one of the most sought-after travel destinations worldwide, India welcomes millions of visitors each year. Its cultural legacy and stunning natural surroundings draw these tourists. It also has a lot of historical sites, such as the Red Fort, the Taj Mahal, and the Golden Temple. It should come as no surprise that one of the primary sources of income for the nation is tourism, given all it has to offer! 
+
+                    India's tourism industry is often regarded as a key instrument for fostering socioeconomic development among the populace. The tourist sector in India has been expanding rapidly lately. In addition, the tourism sector in India offers job opportunities to a wide range of international workers.</p>
+                <a href="states.html" class="info-btn">States Of India</a>
+            </div>
+        </div>
+        
+        </section>
+    </body>
+
+</html>
